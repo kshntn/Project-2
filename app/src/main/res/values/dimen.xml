@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin">16dp</dimen>
+    <dimen name="textsize">24sp</dimen>
+    <dimen name="scoreSize">56sp</dimen>
+    <dimen name="buttonMargin">24dp</dimen>
+    <dimen name="buttonBottom">8dp</dimen>
+    <dimen name="Resetmargin">50dp</dimen>
+    <dimen name="declarationSize">32sp</dimen>
+    <dimen name="viewWidth">1dp</dimen>
+</resources>

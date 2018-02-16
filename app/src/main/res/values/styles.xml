@@ -1,0 +1,25 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Primary theme color of the app (sets background color of app bar) -->
+        <item name="colorPrimary">#FF9800</item>
+        <!-- Background color of buttons in the app -->
+        <item name="colorButtonNormal">#FF9800</item>
+    </style>
+    <style name="ScoreButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/buttonBottom</item>
+        <item name="android:layout_marginLeft">@dimen/buttonMargin</item>
+        <item name="android:layout_marginRight">@dimen/buttonMargin</item>
+    </style>
+    <style name="TeamViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/margin</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/textcolor</item>
+        <item name="android:textSize">@dimen/buttonMargin</item>
+    </style>
+</resources>
