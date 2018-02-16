@@ -6,6 +6,7 @@
         <!-- Background color of buttons in the app -->
         <item name="colorButtonNormal">#FF9800</item>
     </style>
+
     <style name="ScoreButtonStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -14,6 +15,7 @@
         <item name="android:layout_marginLeft">@dimen/buttonMargin</item>
         <item name="android:layout_marginRight">@dimen/buttonMargin</item>
     </style>
+
     <style name="TeamViewStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -21,5 +23,20 @@
         <item name="android:gravity">center_horizontal</item>
         <item name="android:textColor">@color/textcolor</item>
         <item name="android:textSize">@dimen/buttonMargin</item>
+    </style>
+
+    <style name="ScoreTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/buttonMargin</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/scoreColor</item>
+        <item name="android:textSize">@dimen/scoreSize</item>
+    </style>
+
+    <style name="OtherButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
     </style>
 </resources>

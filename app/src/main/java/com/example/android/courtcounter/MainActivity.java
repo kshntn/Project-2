@@ -11,6 +11,8 @@ public class MainActivity extends AppCompatActivity {
     static final String ScoreB = "B";
     static final String countA = "C";
     static final String countB = "D";
+    static final String winnerView = "E";
+    String win;
     int scoreTeamA = 0;
     int scoreTeamB = 0;
     int counterA = 0;
@@ -27,10 +29,13 @@ public class MainActivity extends AppCompatActivity {
             scoreTeamB = savedInstanceState.getInt(ScoreB);
             counterA = savedInstanceState.getInt(countA);
             counterB = savedInstanceState.getInt(countB);
+            win = savedInstanceState.getString(winnerView);
         }
         setContentView(R.layout.activity_main);
         displayForTeamA(scoreTeamA);
         displayForTeamB(scoreTeamB);
+        if (win != null)
+            displayWin(win);
     }
 
     public void onSaveInstanceState(Bundle savedInstanceState) {
@@ -38,6 +43,9 @@ public class MainActivity extends AppCompatActivity {
         savedInstanceState.putInt(ScoreB, scoreTeamB);
         savedInstanceState.putInt(countA, counterA);
         savedInstanceState.putInt(countB, counterB);
+        winView = findViewById(R.id.winview);
+        win = winView.getText().toString();
+        savedInstanceState.putString(winnerView, win);
         // Always call the superclass so it can save the view hierarchy state
         super.onSaveInstanceState(savedInstanceState);
     }
@@ -51,7 +59,6 @@ public class MainActivity extends AppCompatActivity {
         counterA++;
         checknum(counterA);
     }
-
 
     /**
      * This method is called when the +2 for Team Ais clicked.
@@ -144,14 +151,14 @@ public class MainActivity extends AppCompatActivity {
      * Resets the given score for both Teams.
      */
     private void reset(int score) {
-        scoreTeamA = 0;
-        scoreTeamB = 0;
-        counterA = 0;
-        counterB = 0;
-        scoreViewa = (TextView) findViewById(R.id.team_a_score);
-        scoreViewb = (TextView) findViewById(R.id.team_b_score);
-        winView = (TextView) findViewById(R.id.winview);
-        winView.setText(" ");
+        scoreTeamA = score;
+        scoreTeamB = score;
+        counterA = score;
+        counterB = score;
+        scoreViewa = findViewById(R.id.team_a_score);
+        scoreViewb = findViewById(R.id.team_b_score);
+        winView = findViewById(R.id.winview);
+        winView.setText("");
         scoreViewa.setText(String.valueOf(score));
         scoreViewb.setText(String.valueOf(score));
     }
@@ -160,7 +167,7 @@ public class MainActivity extends AppCompatActivity {
      * Displays the given score for Team A.
      */
     private void displayForTeamA(int score) {
-        scoreViewa = (TextView) findViewById(R.id.team_a_score);
+        scoreViewa = findViewById(R.id.team_a_score);
         scoreViewa.setText(String.valueOf(score));
     }
 
@@ -168,7 +175,7 @@ public class MainActivity extends AppCompatActivity {
      * Displays the given score for Team A.
      */
     private void displayForTeamB(int score) {
-        scoreViewb = (TextView) findViewById(R.id.team_b_score);
+        scoreViewb = findViewById(R.id.team_b_score);
         scoreViewb.setText(String.valueOf(score));
     }
 
@@ -176,7 +183,7 @@ public class MainActivity extends AppCompatActivity {
      * Displays the winner from both Teams.
      */
     private void displayWin(String team) {
-        winView = (TextView) findViewById(R.id.winview);
+        winView = findViewById(R.id.winview);
         winView.setText(String.valueOf(team));
     }
 }

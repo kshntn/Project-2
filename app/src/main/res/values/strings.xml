@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Court Counter</string>
-
     <string name="TeamA">Team A Wins</string>
     <string name="TeamB">Team B Wins</string>
     <string name="GameOver">Game Over</string>
