@@ -137,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Function to find the winner for Teams.
      */
-    public void checknum(int counter) {
+    private void checknum(int counter) {
         if (counter > 9) {
             Toast.makeText(getApplicationContext(), getString(R.string.GameOver), Toast.LENGTH_SHORT).show();
             if (scoreTeamA > scoreTeamB) {
