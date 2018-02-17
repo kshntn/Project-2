@@ -22,7 +22,7 @@
         <item name="android:layout_marginBottom">@dimen/margin</item>
         <item name="android:gravity">center_horizontal</item>
         <item name="android:textColor">@color/textcolor</item>
-        <item name="android:textSize">@dimen/buttonMargin</item>
+        <item name="android:textSize">@dimen/textsize</item>
     </style>
 
     <style name="ScoreTextStyle">

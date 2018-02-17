@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the +3 for Team A is clicked.
      */
     public void plus3TeamA(View view) {
-        scoreTeamA = scoreTeamA + 3;
+        scoreTeamA += 3;
         displayForTeamA(scoreTeamA);
         counterA++;
         checknum(counterA);
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the +2 for Team Ais clicked.
      */
     public void plus2TeamA(View view) {
-        scoreTeamA = scoreTeamA + 2;
+        scoreTeamA += 2;
         displayForTeamA(scoreTeamA);
         counterA++;
         checknum(counterA);
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the freethrow for Team A is clicked.
      */
     public void freethrowTeamA(View view) {
-        scoreTeamA = scoreTeamA + 1;
+        scoreTeamA += 1;
         displayForTeamA(scoreTeamA);
         counterA++;
         checknum(counterA);
@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the +3 for Team B is clicked.
      */
     public void plus3TeamB(View view) {
-        scoreTeamB = scoreTeamB + 3;
+        scoreTeamB += 3;
         displayForTeamB(scoreTeamB);
         counterB++;
         checknum(counterB);
@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the +2 for Team B is clicked.
      */
     public void plus2TeamB(View view) {
-        scoreTeamB = scoreTeamB + 2;
+        scoreTeamB += 2;
         displayForTeamB(scoreTeamB);
         counterB++;
         checknum(counterB);
@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the freethrow for Team B is clicked.
      */
     public void freethrowTeamB(View view) {
-        scoreTeamB = scoreTeamB + 1;
+        scoreTeamB += 1;
         displayForTeamB(scoreTeamB);
         counterB++;
         checknum(counterB);
